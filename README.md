@@ -13,6 +13,6 @@ If you want to use this software, you need to set a few things in a `.env` file 
 
 1. `ICAL_URL`: The `https` url for the ical file of games (or whatever else you're using this for).
 2. `RECIPIENT`: The phone number you're going to be sending the text to.
-3. `TEXTBELT_API_KEY`: The key you'll be providing to the textbelt API. You'll need to modify this for self-hosted instances.
+3. `TEXTBELT_API_KEY`: The key you'll be providing to the textbelt API. You'll need to modify how the code handles this manually for self-hosted instances.
 
 From there you can schedule your cronjob to run it however many times you want. I have it run at 7am local time every day because that's before I get up.
