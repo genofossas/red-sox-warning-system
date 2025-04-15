@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import icalendar as ic
 import os
 from dotenv import load_dotenv
@@ -28,7 +29,6 @@ def write_success(msg):
 
 # Send a text
 def send_text(event):
-    
     recipient = Textbelt.Recipient(os.getenv("RECIPIENT"))    
     event_start_time = event.get("DTSTART").dt.astimezone(NEW_YORK).time()
     text_contents = f'Hello! This is your friendly reminder that there\'s a Boston Red Sox game at {event_start_time} today.'
