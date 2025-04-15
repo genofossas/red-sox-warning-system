@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import icalendar as ic
 import os
 from dotenv import load_dotenv
