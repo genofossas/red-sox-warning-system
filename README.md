@@ -18,8 +18,12 @@ If you want to use this software, you need to set a few things in a `.env` file 
 From there you can schedule your cronjob to run it however many times you want. I have it run at 7am local time every day.
 
 To run the code in cron:
-1. Set up a python virtual environment: `python3 -m venv /path/to/proj/root/venv`
-   - Activate the environment: `source /path/to/proj/root/venv/bin/activate`
-   - Install dependencies: `pip install -r requirements.txt`
-   - Exit the venv: `deactivate`
+1. Set up a python virtual environment
+    ```sh
+    cd /path/to/proj/root
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    deactivate
+    ```
 2. Add the following into your crontab (in the scripts field): `/path/to/proj/root/venv/bin/python /path/to/proj/root/red-sox-ward.py`
